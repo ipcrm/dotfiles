@@ -37,7 +37,7 @@ set modeline
 syntax on
 
 
-colorscheme onedark
+"colorscheme onedark
 "set bg=dark
 " set default comment color to cyan instead of darkblue
 " which is not very legible on a black background
