@@ -1,0 +1,63 @@
+[user]
+	name = ipcrm
+	email = mcadorette@gmail.com
+[core]
+	excludesfile = /Users/mcadorette/.gitignore_global
+    editor = vim
+    autocrlf = input
+    safecrlf = false
+[color]
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    fa = fetch --all
+    rs = remote show
+    rsg = remote show github
+    rsu = remote show mxc205
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    plog = log --format=\"%Cgreen%h%Creset %s (%Cred%cr%Creset, %Cgreen%an%Creset)\"
+    type = cat-file -t
+    dump = cat-file -p
+    sourcetree = !open -a SourceTree .
+
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[push]
+  default = matching
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+  required = true
+[mergetool]
+	keepTemporaries = false
+	prompt = false
+	keepBackup = false
+[diff "localizablestrings"]
+  textconv = "iconv -f utf-16 -t utf-8"
+
+#[mergetool "p4mergetool"]
+#	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$REMOTE $PWD/$LOCAL $PWD/$MERGED
+#	trustExitCode = false
+[diff]
+	tool = diffmerge
+[difftool "diffmerge"]
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge \"$LOCAL\" \"$REMOTE\"
+[merge]
+	tool = diffmerge
+[mergetool "diffmerge"]
+	cmd = "/Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$(if test -f \"$BASE\"; then echo \"$BASE\"; else echo \"$LOCAL\"; fi)\" \"$REMOTE\""
+	trustExitCode = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
