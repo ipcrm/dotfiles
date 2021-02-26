@@ -1,0 +1,13 @@
+{
+  "coc.preferences.noselect": false,
+  "coc.preferences.useQuickfixForLocations": true,
+  "python.jediEnabled": true,
+  "languageserver": {
+    "clojure-lsp": {
+      "command": "/usr/local/bin/clojure-lsp",
+      "filetypes": ["clojure"],
+      "rootPatterns": ["project.clj"],
+      "additionalSchemes": ["jar", "zipfile"]
+    }
+  }  
+}
