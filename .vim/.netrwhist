@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/Users/mcadorette/git/puppetlabs-rgbank/spec/unit/applications'
 let g:netrw_dirhist_2='/Users/mcadorette/git/puppetlabs-rgbank/spec/unit'
 let g:netrw_dirhist_3='/Users/mcadorette/git/puppetlabs-rgbank/spec/unit/applications'
@@ -7,3 +7,4 @@ let g:netrw_dirhist_4='/Users/mcadorette/git/puppetlabs-rgbank/spec/unit'
 let g:netrw_dirhist_5='/Users/mcadorette/git/puppetlabs-rgbank/spec/unit/applications'
 let g:netrw_dirhist_6='/Users/mcadorette/git/puppetlabs-rgbank/spec/unit'
 let g:netrw_dirhist_7='/Users/mcadorette/git/puppetlabs-rgbank/spec/unit/applications'
+let g:netrw_dirhist_8='/Users/mcadorette/git/gpic/puppet/gpic/manifests'

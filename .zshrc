@@ -5,8 +5,8 @@ export ZSH=/Users/mcadorette/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="robbyrussell"
-ZSH_THEME="agnoster" 
+ZSH_THEME="robbyrussell"
+#ZSH_THEME="agnoster" 
 
 function ssh() {
   if [ -n "$TMUX" ] # set only if within running tmux
@@ -116,3 +116,8 @@ PERL5LIB="/Users/mcadorette/perl5/lib/perl5${PERL5LIB+:}${PERL5LIB}"; export PER
 PERL_LOCAL_LIB_ROOT="/Users/mcadorette/perl5${PERL_LOCAL_LIB_ROOT+:}${PERL_LOCAL_LIB_ROOT}"; export PERL_LOCAL_LIB_ROOT;
 PERL_MB_OPT="--install_base \"/Users/mcadorette/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/mcadorette/perl5"; export PERL_MM_OPT;
+
+export PATH=$PATH:~/.android-sdk-macosx/platform-tools/
+
+alias vi=/usr/local/bin/nvim
+alias vim=/usr/local/bin/nvim
